@@ -1,8 +1,10 @@
 {
   "root": true,
+  "parser": "typescript-eslint-parser",
   "parserOptions": {
     "ecmaVersion": 8,
-    "sourceType": "module"  },
+    "sourceType": "module"  
+  },
   "extends": [
     "eslint:recommended",
     "airbnb",

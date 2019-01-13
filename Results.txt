@@ -1,0 +1,2 @@
+Semi n=4 3492
+Moufang n=4 
