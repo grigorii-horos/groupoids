@@ -14,5 +14,8 @@ for (let i = 0; i < n ** (n * n); i += 1) {
 
 
   // console.log(isSemigroup(matrix, n));
-  console.log(isMoufang(matrix, n));
+  // console.log(i,isMoufang(matrix, n));
+  if(isMoufang(matrix, n)){
+  	console.log(i)
+  }
 }
