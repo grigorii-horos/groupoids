@@ -3,8 +3,8 @@
 
 const { numToMatrix } = require('./lib/utils');
 
-// const isSemigroup = require('./lib/isSemigroup');
-const isMoufang = require('./lib/isMoufang');
+const isSemigroup = require('./lib/isSemigroup');
+// const isMoufang = require('./lib/isMoufang');
 
 const n = 4;
 
