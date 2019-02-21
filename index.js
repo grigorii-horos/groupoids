@@ -3,8 +3,8 @@
 
 const { numToMatrix } = require('./lib/utils');
 
-const isSemigroup = require('./lib/isSemigroup');
-// const isMoufang = require('./lib/isMoufang');
+// const isSemigroup = require('./lib/isSemigroup');
+const isMoufang = require('./lib/isMoufang');
 
 const n = 4;
 
@@ -15,7 +15,7 @@ for (let i = 0; i < n ** (n * n); i += 1) {
 
   // console.log(isSemigroup(matrix, n));
   // console.log(i,isMoufang(matrix, n));
-  if(isSemigroup(matrix, n)){
+  if(isMoufang(matrix, n)){
   	console.log(i)
   }
 }
