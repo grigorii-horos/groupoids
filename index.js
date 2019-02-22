@@ -1,21 +1,24 @@
-/* eslint-disable no-underscore-dangle */
 
-
-const { numToMatrix } = require('./lib/utils');
+const { numToMatrix } = require('./lib');
 
 // const isSemigroup = require('./lib/isSemigroup');
-const isMoufang = require('./lib/isMoufang');
+// const isMoufang = require('./lib/isMoufang');
+// const isLeftBol = require('./lib/isLeftBol');
+// const isRightBol = require('./lib/isRightBol');
+// const isAbelianGroup = require('./lib/isAbelianGroup');
+// const isCLoop = require('./lib/isCLoop');
+// const isMiddleNuclearSquare = require('./lib/isMiddleNuclearSquare');
+// const isRightNuclearSquare = require('./lib/isRightNuclearSquare');
+const isLeftNuclearSquare = require('./lib/isLeftNuclearSquare');
 
-const n = 3;
+const n = 4;
 
 
 for (let i = 0; i < n ** (n * n); i += 1) {
   const matrix = (numToMatrix(n)(i));
 
 
-  // console.log(isSemigroup(matrix, n));
-  // console.log(i,isMoufang(matrix, n));
-  if(isMoufang(matrix, n)){
-  	console.log(i)
+  if (isLeftNuclearSquare(matrix, n)) {
+    console.log(i);
   }
 }
