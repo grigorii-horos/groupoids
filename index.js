@@ -1,7 +1,7 @@
 const { numToMatrix } = require('./lib');
 
 
-const fn = require('./lib/isMateI');
+const fn = require('./lib/isChebanIDual');
 
 const n = 4;
 
